@@ -6,7 +6,7 @@ const Blog = () => {
           <div className=' my-24 md:mx-32 mx-6'>
             <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div className="collapse-title text-xl font-medium">
-            When should use context api ?
+            What is the differences between uncontrolled and controlled components ?
             </div>
             <div className="collapse-content"> 
                 <p>React Context API is a way to manage state globally. It can be used together with the useState Hook to share state between deeply nested components more easily.</p>
