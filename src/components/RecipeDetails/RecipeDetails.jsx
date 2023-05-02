@@ -115,6 +115,7 @@ const RecipeDetails = () => {
                   Favorite{" "}
                 </button>
               </div>
+              
             ))}
           </div>
         </div>

@@ -138,7 +138,7 @@ const handleLogout = () => {
               </li>
               <li className="font-semibold mt-3">
                 <NavLink
-                  to="/books"
+                  to="/blog"
                   className={({ isActive }) =>
                     isActive
                       ? "text-green-600"
