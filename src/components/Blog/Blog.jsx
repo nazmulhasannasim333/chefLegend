@@ -14,7 +14,7 @@ const Blog = () => {
             </div>
             <div tabIndex={1} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div className="collapse-title text-xl font-medium">
-            What is react customs Hooks ?
+            How to validate React props using PropTypes ?
             </div>
             <div className="collapse-content"> 
                 <p>React customs hooks are reusable functions that a React JS software developer can use to add special and unique functionality to the React applications. Usually, if there is a requirement to add a feature, one can install a third-party library and solve the problem</p>
@@ -22,7 +22,7 @@ const Blog = () => {
             </div>
             <div tabIndex={2} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div className="collapse-title text-xl font-medium">
-            What is useRef ?
+            What is the difference between nodejs and express js. ?
             </div>
             <div className="collapse-content"> 
                 <p>useRef is a built-in React hook that accepts one argument as the initial value and returns a reference A reference is an object having a special property current </p>
@@ -30,7 +30,7 @@ const Blog = () => {
             </div>
             <div tabIndex={3} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div className="collapse-title text-xl font-medium">
-            What is useMemo ?
+            What is a custom hook, and why will you create a custom hook?
             </div>
             <div className="collapse-content"> 
                 <p>The React useMemo Hook returns a memoized value. Think of memoization as caching a value so that it does not need to be recalculated. </p>
