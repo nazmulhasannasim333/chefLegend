@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Toaster, toast } from "react-hot-toast";
 import { FaHeart, FaRegStar, FaStar } from "react-icons/fa";
+import LazyLoad from 'react-lazyload';
 import Rating from "react-rating";
 
 const RecipeItem = ({item}) => {
@@ -25,7 +26,9 @@ const RecipeItem = ({item}) => {
 
     return (
         <div  className="relative px-2 py-5 lg:py-2 border">
+                <LazyLoad height={200}>
                 <img className="h-64 w-full" src={item?.recipeImage} />
+                </LazyLoad>
                 <h4 className="text-xl font-semibold">{item?.recipe}</h4>
                 <p className=" text-gray-900 pt-4">
                   Cooking method:

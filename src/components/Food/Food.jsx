@@ -5,7 +5,7 @@ const Food = () => {
     return (
         <div>
             
-            <div className="max-w-6xl mx-auto mt-14">
+            <div className="max-w-6xl mx-auto mt-24">
             <h3 className="text-center mb-2 text-4xl font-semibold">Special Foods</h3>
             <p className="text-center mb-8">Check and find the best quality food, we always try to do best service</p>
             

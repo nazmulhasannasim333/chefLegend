@@ -1,5 +1,6 @@
 import React from "react";
 
+import LazyLoad from "react-lazyload";
 import { useLoaderData } from "react-router-dom";
 import RecipeItem from "../RecipeItem/RecipeItem";
 
@@ -23,11 +24,13 @@ const RecipeDetails = () => {
       <div className=" overflow-hidden  bg-white border rounded shadow-sm ">
         <div className="flex flex-col pt-5  lg:flex-row sm:mx-auto">
           <div className=" lg:w-1/2 h-full px-2 py-2">
+            <LazyLoad height={200} >
             <img
               src={chefPicture}
               alt="book cover"
               className="object-cover w-full  lg:h-full"
             />
+            </LazyLoad>
           </div>
           <div className=" px-8 bg-white lg:px-20  lg:w-1/2">
             <p className=" text-gray-900 pt-4 text-xl py-2">

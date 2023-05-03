@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import LazyLoad from 'react-lazyload';
 import { Link } from 'react-router-dom';
 import BannerImage from '../../assets/image/banner.png';
 
@@ -10,7 +10,9 @@ const Banner = () => {
             <div className=' lg:max-w-7xl lg:mx-auto mx-8  flex flex-col lg:flex-row justify-center items-center '>
                 
             <div className='pt-8'>
-                <LazyLoadImage effect='opacity' src={BannerImage} alt="" />
+                <LazyLoad height={200}>
+                <img  src={BannerImage} alt="" />
+                </LazyLoad>
             </div>
             <div className='lg:w-1/2 w-full'>
                 <h1 className='lg:text-6xl text-4xl  font-semibold py-8 leading-none'>Your Perfect Hire is on iHireChefs</h1>

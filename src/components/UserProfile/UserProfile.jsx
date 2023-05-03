@@ -16,7 +16,7 @@ const UserProfile = () => {
           <p className="text-gray-800 mb-4">
           {user && user.displayName} was an Bangladeshi chef and television personality who introduced Bangladeshi cuisine to the Bangladeshi public. She authored several cookbooks and hosted the television show The Bangladeshi Chef which aired from 1990 to 2022 Running.
           </p>
-          <div className="flex justify-between">
+          <div className="lg:flex justify-between">
             <div>
               <p className="text-gray-600 text-sm">Email:</p>
               <p className="text-gray-800">{user && user.email}</p>
@@ -26,7 +26,7 @@ const UserProfile = () => {
               <p className="text-gray-800">0171111111111</p>
             </div>
           </div>
-          <div className="flex justify-between mt-4">
+          <div className="lg:flex justify-between mt-4">
             <div>
               <p className="text-gray-600 text-sm">Website:</p>
               <a href="#" className="text-indigo-600 hover:text-indigo-800">Nasimdroid.com</a>

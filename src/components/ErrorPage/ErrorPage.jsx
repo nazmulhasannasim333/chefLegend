@@ -7,6 +7,7 @@ const ErrorPage = () => {
   return (
     <section className='flex items-center h-screen p-16 bg-gray-100 text-gray-900'>
       <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
+        <img className='h-52 w-96 my-12' src="https://atlassianblog.wpengine.com/wp-content/uploads/2017/12/44-incredible-404-error-pages@3x-1560x760.png" alt="" />
         <FaRegGrinAlt className='w-40 h-40 text-green-500' />
         <div className='max-w-md text-center'>
           <h2 className='mb-8 font-extrabold text-9xl text-green-500'>
