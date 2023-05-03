@@ -23,7 +23,7 @@ const Blog = () => {
             </div>
             <div tabIndex={2} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div className="collapse-title text-xl font-medium">
-            What is the difference between nodejs and express js. ?
+            What is the difference between nodejs and express js ?
             </div>
             <div className="collapse-content"> 
                 <p>Express is a minimal and flexible node. js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications. On the other hand, Node. js is detailed as "A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications". </p>
