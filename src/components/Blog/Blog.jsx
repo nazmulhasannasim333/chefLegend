@@ -34,7 +34,7 @@ const Blog = () => {
             What is a custom hook, and why will you create a custom hook?
             </div>
             <div className="collapse-content"> 
-                <p>The React useMemo Hook returns a memoized value. Think of memoization as caching a value so that it does not need to be recalculated. </p>
+                <p>React JS Custom hooks are reusable functions that a React JS. Developer can use to add special and unique functionality to the React applications. Usually, if there is a requirement to add a feature, one can install a third-party library and solve the problem.</p>
             </div>
             </div>
         </div>
