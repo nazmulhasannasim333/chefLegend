@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
 const Blog = () => {
@@ -25,7 +26,7 @@ const Blog = () => {
             What is the difference between nodejs and express js. ?
             </div>
             <div className="collapse-content"> 
-                <p>useRef is a built-in React hook that accepts one argument as the initial value and returns a reference A reference is an object having a special property current </p>
+                <p>Express is a minimal and flexible node. js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications. On the other hand, Node. js is detailed as "A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications". </p>
             </div>
             </div>
             <div tabIndex={3} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
