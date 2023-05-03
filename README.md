@@ -1,7 +1,7 @@
 ## Summery of this project
 
 <p align="center">Live Link : https://chef-legend-project.web.app/ <p />
-  <h3 align="center"><a href="https://chef-legend-project.web.app ">JobHunterBD</a></h3>
+  <h3 align="center"><a href="https://chef-legend-project.web.app ">ChefLegend</a></h3>
   
   * Design with react jsx and taiwind css.
   * Design navbar.

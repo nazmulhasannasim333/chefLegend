@@ -82,9 +82,6 @@ const handleLogout = () => {
                     </Link>
                   </li>
                   <li>
-                    <a>Settings</a>
-                  </li>
-                  <li>
                     <Link onClick={handleLogout} to="/login">Logout</Link>
                   </li>
                 </ul>
