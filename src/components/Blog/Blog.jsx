@@ -18,7 +18,7 @@ const Blog = () => {
             How to validate React props using PropTypes ?
             </div>
             <div className="collapse-content"> 
-                <p>React customs hooks are reusable functions that a React JS software developer can use to add special and unique functionality to the React applications. Usually, if there is a requirement to add a feature, one can install a third-party library and solve the problem</p>
+                <p>We validate them by setting the propTypes property of the component to an object that has the names of the props to validate as the keys. And the corresponding values are the data type of the props.</p>
             </div>
             </div>
             <div tabIndex={2} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
