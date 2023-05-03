@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useContext, useState } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 
@@ -10,8 +10,11 @@ import { AuthContext } from "../../providers/AuthProvider";
 const Login = () => {
 
   const {loginUser, googleLogin, githubLogin} = useContext(AuthContext);
-  const [showError, setShowError] = useState("")
-  const navigate = useNavigate()
+  const [showError, setShowError] = useState("");
+  const navigate = useNavigate();
+  let location = useLocation();
+
+  let from = location.state?.from?.pathname || "/";
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -28,7 +31,7 @@ const Login = () => {
       console.log(loginUser);
       form.reset();
 
-      navigate('/')
+      navigate(from, {replace: true})
     })
     .catch(error => {
       console.log(error);

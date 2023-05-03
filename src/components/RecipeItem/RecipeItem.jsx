@@ -11,7 +11,7 @@ const RecipeItem = ({item}) => {
   const handleDisabled = () => {
     setIsDisabled(true)
     toast.success('Added to favorite', {
-      duration: 4000,
+      duration: 3000,
       position: 'right-top',
       style: {
         border: '1px solid #713200',
