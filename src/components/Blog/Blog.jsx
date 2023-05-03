@@ -10,7 +10,7 @@ const Blog = () => {
             What is the differences between uncontrolled and controlled components ?
             </div>
             <div className="collapse-content"> 
-                <p>React Context API is a way to manage state globally. It can be used together with the useState Hook to share state between deeply nested components more easily.</p>
+                <p>Controlled components refer to components that have their state and behavior controlled by the parent component. These components rely on props passed down from the parent component to update their state and behavior. Uncontrolled components refer to components that manage their own state internally.</p>
             </div>
             </div>
             <div tabIndex={1} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
