@@ -31,7 +31,7 @@ const Blog = () => {
             </div>
             <div tabIndex={3} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
             <div className="collapse-title text-xl font-medium">
-            What is a custom hook, and why will you create a custom hook?
+            What is a custom hook, and why will you create a custom hook ?
             </div>
             <div className="collapse-content"> 
                 <p>React JS Custom hooks are reusable functions that a React JS. Developer can use to add special and unique functionality to the React applications. Usually, if there is a requirement to add a feature, one can install a third-party library and solve the problem.</p>
