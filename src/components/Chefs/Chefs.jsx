@@ -21,7 +21,7 @@ const Chefs = () => {
         <div className='max-w-6xl lg:mx-auto mx-4 mt-14'>
             <div className='text-center py-14'>
                 <h3 className='font-semibold text-4xl pb-4'>Focus on Quality to Find the best Chef</h3>
-                <p>Industry-Focused Tools You Need to Save Time, Stand Out, and Attract Top Chef</p>
+                <p>Industry-Focused Tools You Need to Save Time, Stand Out</p>
             </div>
         <div className='grid gap-6 mb-8 lg:grid-cols-3 sm:grid-cols-1'>
             
