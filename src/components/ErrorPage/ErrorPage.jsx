@@ -5,7 +5,7 @@ import { Link, useRouteError } from 'react-router-dom';
 const ErrorPage = () => {
   const { error, status } = useRouteError()
   return (
-    <section className='flex items-center h-screen p-16 bg-gray-100 text-gray-900'>
+    <div className='flex items-center p-16 bg-gray-100'>
       <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
         <img className='h-52 w-96 my-12' src="https://atlassianblog.wpengine.com/wp-content/uploads/2017/12/44-incredible-404-error-pages@3x-1560x760.png" alt="" />
         <FaRegGrinAlt className='w-40 h-40 text-green-500' />
@@ -22,7 +22,7 @@ const ErrorPage = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

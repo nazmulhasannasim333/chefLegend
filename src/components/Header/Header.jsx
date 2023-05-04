@@ -1,12 +1,29 @@
-import React, { useContext, useState } from "react";
-import { FaAlignRight, FaTimes } from "react-icons/fa";
+import React, { useContext, useEffect, useState } from "react";
+import { FaAlignRight, FaRegMoon, FaSun, FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const {user, logout} = useContext(AuthContext);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+
+  const toggleDarkMode = ()=> {
+    setIsDarkMode(!isDarkMode);
+  }
+
+  useEffect(() => {
+    // Check if user prefers dark mode
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    // Add or remove "dark-mode" class based on user preference and state
+    if (prefersDarkMode || isDarkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [isDarkMode]);
 
 const handleLogout = () => {
   logout(() => {
@@ -15,9 +32,9 @@ const handleLogout = () => {
 }
 
   return (
-    <div
-      style={{ backgroundColor: "#fafafa" }}
-      className="sticky top-0 z-50 max-w-7xl mx-auto"
+      <div
+      
+      className=" max-w-7xl mx-auto"
     >
       <nav className=" px-20 flex justify-between items-center">
         <div className="py-5 text-green-500 font-extrabold text-4xl">
@@ -27,6 +44,7 @@ const handleLogout = () => {
         </div>
         <div>
           <ul className="hidden lg:flex items-center space-x-6 font-semibold">
+            
             <li>
               <NavLink
                 to="/"
@@ -73,7 +91,7 @@ const handleLogout = () => {
                 </label>
                 <ul
                   tabIndex={0}
-                  className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+                  className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-gray-400 rounded-box w-52"
                 >
                   <li>
                     <Link to="/profile" className="justify-between">
@@ -88,6 +106,13 @@ const handleLogout = () => {
               </div> : <Link to="/login"><button className="bg-green-500 px-5 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
                Login
               </button></Link> }
+            </li>
+            <li>
+              {
+                isDarkMode ? <button onClick={toggleDarkMode}><FaSun className=" w-6 text-white h-6 mt-3" /></button> : <button onClick={toggleDarkMode}><FaRegMoon className=" w-6 text-black h-6 mt-3"  /></button>
+              }
+            
+            
             </li>
           </ul>
         </div>
@@ -107,7 +132,7 @@ const handleLogout = () => {
           </button>
         </div>
         {isMenuOpen && (
-          <div className="lg:hidden bg-slate-100 h-96 opacity-90 absolute inset-0">
+          <div className="lg:hidden bg-indigo-300 h-96 opacity-90 absolute inset-0">
             <ul className=" grid place-items-center py-20">
               <li className="font-semibold mt-3">
                 <NavLink
@@ -175,6 +200,12 @@ const handleLogout = () => {
               </button></Link> }
             </li>
               </li>
+              <li>
+              {
+                isDarkMode ? <button onClick={toggleDarkMode}><FaSun className=" w-6 text-white h-6 mt-3" /></button> : <button onClick={toggleDarkMode}><FaRegMoon className=" w-6 text-black h-6 mt-3"  /></button>
+              }
+            
+            </li>
             </ul>
           </div>
         )}

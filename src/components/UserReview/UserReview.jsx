@@ -28,7 +28,7 @@ const UserReview = () => {
   return (
     <div className=" py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-gray-900">What Customer Are Saying</h2>
+        <h2 className="text-3xl font-semibold ">What Customer Are Saying</h2>
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           {reviews.map((review) => (
             <div key={review.id} className="bg-white overflow-hidden shadow rounded-lg">

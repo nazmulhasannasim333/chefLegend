@@ -10,7 +10,7 @@ const Chef = ({chef}) => {
       <div className='overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl'>
         
 
-     <LazyLoad height={200}> 
+     <LazyLoad height={500}>
      <img
           src={chefPicture}
           alt='book cover'

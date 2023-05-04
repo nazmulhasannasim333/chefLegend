@@ -18,7 +18,7 @@ const Blog = () => {
             </Pdf>
             <div
               tabIndex={0}
-              className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+              className="collapse collapse-plus border border-base-300  rounded-box"
             >
               <div className="collapse-title text-xl font-medium">
                 What is the differences between uncontrolled and controlled
@@ -37,7 +37,7 @@ const Blog = () => {
             </div>
             <div
               tabIndex={1}
-              className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+              className="collapse collapse-plus border border-base-300 rounded-box"
             >
               <div className="collapse-title text-xl font-medium">
                 How to validate React props using PropTypes ?
@@ -53,7 +53,7 @@ const Blog = () => {
             </div>
             <div
               tabIndex={2}
-              className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+              className="collapse collapse-plus border border-base-300 rounded-box"
             >
               <div className="collapse-title text-xl font-medium">
                 What is the difference between nodejs and express js ?
@@ -71,7 +71,7 @@ const Blog = () => {
             </div>
             <div
               tabIndex={3}
-              className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+              className="collapse collapse-plus border border-base-300  rounded-box"
             >
               <div className="collapse-title text-xl font-medium">
                 What is a custom hook, and why will you create a custom hook ?

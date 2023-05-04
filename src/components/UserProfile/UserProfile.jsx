@@ -10,7 +10,7 @@ const UserProfile = () => {
       <div className="bg-white rounded-lg overflow-hidden shadow-lg w-full">
         <img src={user && user.photoURL} alt="Profile" className="w-64 h-64 mx-auto rounded-full mt-6 mb-4 object-cover" />
         <div className="p-6">
-          <h2 className="text-2xl font-bold mb-2">{user && user.displayName}</h2>
+          <h2 className="text-2xl font-bold mb-2 text-black">{user && user.displayName}</h2>
           <p className="text-gray-600 text-sm">Frontend Developer</p>
           <p className="text-gray-600 text-sm mt-4">Bio:</p>
           <p className="text-gray-800 mb-4">

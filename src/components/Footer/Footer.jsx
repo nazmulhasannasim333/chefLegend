@@ -77,7 +77,7 @@ const Footer = () => {
               <div className="flex items-center">
                 <input
                   type="text"
-                  className="w-3/4 text-gray-700 bg-color-white p-2 lg:p-3 rounded-l-md focus:outline-none"
+                  className="w-3/4 bg-white p-2 lg:p-3 rounded-l-md focus:outline-none"
                   placeholder="Enter Your Email"
                 />
 

@@ -45,9 +45,9 @@ const TopCategories = () => {
             <div  className='grid gap-8 mb-8 lg:grid-cols-4 sm:grid-cols-1'>
             {
                 categories.map((item, i) => 
-                <div key={i} className="  bg-[#2e442b0f] text-center lg:text-start py-12 px-7 rounded-xl cursor-pointer  shadow-md">
+                <div key={i} className="  bg-[#a29e9e0f] text-center lg:text-start py-12 px-7 rounded-xl cursor-pointer  shadow-md">
                 <div className="rounded-2xl ">
-                  <LazyLoad height={200}>
+                  <LazyLoad height={500}>
                   <img className="h-20 w-32 mx-auto rounded-md"  src={item.image} alt="" />
                   </LazyLoad>
                 </div>
