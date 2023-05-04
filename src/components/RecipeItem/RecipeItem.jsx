@@ -29,7 +29,7 @@ const RecipeItem = ({item}) => {
                 <LazyLoad height={200}>
                 <img className="h-64 w-full" src={item?.recipeImage} />
                 </LazyLoad>
-                <h4 className="text-xl font-semibold">{item?.recipe}</h4>
+                <h4 className="text-xl font-semibold text-black">{item?.recipe}</h4>
                 <p className=" text-gray-900 pt-4">
                   Cooking method:
                   <br />

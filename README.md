@@ -1,4 +1,4 @@
-## Summery of this project
+## About of this project
 
 <p align="center">Live Link : https://chef-legend-project.web.app/ <p />
   <h3 align="center"><a href="https://chef-legend-project.web.app ">ChefLegend</a></h3>

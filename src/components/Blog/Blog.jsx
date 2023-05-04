@@ -6,7 +6,7 @@ import Pdf from "react-to-pdf";
 const Blog = () => {
   const ref = React.createRef();
   return (
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto z-0">
         <div className=" my-24 md:mx-32 mx-6">
           <div ref={ref}>
             <Pdf targetRef={ref} filename="code-example.pdf">

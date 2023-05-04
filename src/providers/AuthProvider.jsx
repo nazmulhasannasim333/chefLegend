@@ -61,7 +61,8 @@ const authInfo = {
     profileUpdate,
     logout,
     googleLogin,
-    githubLogin
+    githubLogin,
+    
 }
 
     return (

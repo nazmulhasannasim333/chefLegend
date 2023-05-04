@@ -48,9 +48,9 @@ const RecipeDetails = () => {
               Likes: <span className="font-semibold">{like}</span>
             </p>
             <ul>
-              <span className=" ">Recipes:</span>
+              <span className="text-black ">Recipes:</span>
               {numberOfRecipes.map((sr, i) => (
-                <li className="font-semibold" key={i}>
+                <li className="font-semibold text-black" key={i}>
                   {sr.recipe}
                 </li>
               ))}

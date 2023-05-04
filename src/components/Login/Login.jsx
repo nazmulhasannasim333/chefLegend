@@ -71,7 +71,7 @@ const Login = () => {
           <input type="hidden" name="remember" defaultValue="true" />
           <div className="rounded-md shadow-sm -space-y-px">
             <div className="pt-5">
-              <label htmlFor="email-address" >
+              <label className="text-black"  htmlFor="email-address" >
                 Email address
               </label>
               <input
@@ -80,12 +80,12 @@ const Login = () => {
                 type="email"
                 autoComplete="email"
                 required
-                className="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm "
+                className="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-400 text-black bg-white rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm "
                 placeholder="Enter Email address"
               />
             </div>
             <div className="pt-5">
-              <label htmlFor="password" >
+              <label className="text-black"  htmlFor="password" >
                 Password
               </label>
               <input
@@ -94,7 +94,7 @@ const Login = () => {
                 type="password"
                 autoComplete="current-password"
                 required
-                className="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm "
+                className="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-400 text-black bg-white focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm "
                 placeholder="Enter Password"
               />
             </div>
@@ -116,9 +116,9 @@ const Login = () => {
           </button>
         </form>
         <p className="text-center text-red-500 pt-5">{showError && showError}</p>
-        <p className="text-center pt-5">Don't have an account? <Link className="text-green-500" to="/register">Register</Link></p>
-        <button onClick={handleGoogleLogin} className="btn btn-outline  w-full mt-10"><FaGoogle className="text-green-500 text-4xl pe-3"/> Login with Google</button>
-        <button onClick={handleGithubLogin} className="btn btn-outline  w-full mt-5"><FaGithub className="text-black text-4xl pe-3"/> Login with Github</button>
+        <p className="text-center pt-5 text-black">Don't have an account? <Link className="text-green-500" to="/register">Register</Link></p>
+        <button onClick={handleGoogleLogin} className="btn btn-outline  w-full mt-10"><FaGoogle className="text-green-500 text-4xl pe-3"/> <span className="text-black">Login with Google</span></button>
+        <button onClick={handleGithubLogin} className="btn btn-outline  w-full mt-5"><FaGithub className="text-black text-4xl pe-3"/> <span className="text-black">Login with Github</span></button>
         
       </div>
     </div>

@@ -89,9 +89,9 @@ const handleLogout = () => {
                     <img title={user && user.displayName} src={user && user.photoURL} />
                   </div>
                 </label>
-                <ul
+                <ul 
                   tabIndex={0}
-                  className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-gray-400 rounded-box w-52"
+                  className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-indigo-300 rounded-box w-52"
                 >
                   <li>
                     <Link to="/profile" className="justify-between">
@@ -118,7 +118,7 @@ const handleLogout = () => {
         </div>
 
         {/* Mobile Screen */}
-        <div className="lg:hidden cursor-pointer ml-10 z-50">
+        <div  className="lg:hidden cursor-pointer ml-10 z-50">
           <button
             title={!isMenuOpen ? "Open Menu" : "Close Menu"}
             aria-label={!isMenuOpen ? "Open Menu" : "Close Menu"}
@@ -132,7 +132,7 @@ const handleLogout = () => {
           </button>
         </div>
         {isMenuOpen && (
-          <div className="lg:hidden bg-indigo-300 h-96 opacity-90 absolute inset-0">
+          <div className="lg:hidden bg-indigo-300 h-96 opacity-90 z-30 absolute inset-0">
             <ul className=" grid place-items-center py-20">
               <li className="font-semibold mt-3">
                 <NavLink
@@ -180,18 +180,15 @@ const handleLogout = () => {
                 </label>
                 <ul
                   tabIndex={0}
-                  className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+                  className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-indigo-800 rounded-box w-52"
                 >
-                  <li>
+                  <li className="text-white">
                     <Link to="/profile" className="justify-between">
                       Profile
                       <span className="badge">New</span>
                     </Link>
                   </li>
-                  <li>
-                    <a>Settings</a>
-                  </li>
-                  <li>
+                  <li className="text-white">
                     <Link onClick={handleLogout} to="/login">Logout</Link>
                   </li>
                 </ul>
