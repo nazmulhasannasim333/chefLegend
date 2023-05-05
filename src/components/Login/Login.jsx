@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import './Login.css';
 
 
 
@@ -110,14 +111,17 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+            className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
           >
             Login
           </button>
         </form>
         <p className="text-center text-red-500 pt-5">{showError && showError}</p>
         <p className="text-center pt-5 text-black">Don't have an account? <Link className="text-green-500" to="/register">Register</Link></p>
-        <button onClick={handleGoogleLogin} className="btn btn-outline  w-full mt-10"><FaGoogle className="text-green-500 text-4xl pe-3"/> <span className="text-black">Login with Google</span></button>
+        <div className="text-center my-4">
+        <span className="content-style">Or</span>
+      </div>
+        <button onClick={handleGoogleLogin} className="btn btn-outline  w-full mt-5"><FaGoogle className="text-green-500 text-4xl pe-3"/> <span className="text-black">Login with Google</span></button>
         <button onClick={handleGithubLogin} className="btn btn-outline  w-full mt-5"><FaGithub className="text-black text-4xl pe-3"/> <span className="text-black">Login with Github</span></button>
         
       </div>
