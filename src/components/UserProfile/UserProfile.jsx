@@ -3,10 +3,12 @@ import React, { useContext } from "react";
 import { FaUserEdit } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 
 const UserProfile = () => {
   const { user, profileUpdate } = useContext(AuthContext);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  useTitle("Profile")
 
   const handleProfileEdit = (event) => {
     event.preventDefault();
