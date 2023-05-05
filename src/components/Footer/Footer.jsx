@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
 
           <div className="flex justify-center pt-10 border-t border-gray-400">
-            <p>2023 &copy; <span className="text-2xl"> Chef</span><span className="text-green-500 text-2xl">Legend</span> All Rights Reserved.</p>
+            <p>2023 &copy; <span className="text-2xl text-orange-600"> Chef</span><span className="text-green-500 text-2xl">Legend</span> All Rights Reserved.</p>
           </div>
         </div>
       </div>

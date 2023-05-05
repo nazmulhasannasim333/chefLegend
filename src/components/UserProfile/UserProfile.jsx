@@ -1,10 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useContext } from "react";
 import { FaUserEdit } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const UserProfile = () => {
   const { user, profileUpdate } = useContext(AuthContext);
+  const navigate = useNavigate()
 
   const handleProfileEdit = (event) => {
     event.preventDefault();
@@ -17,6 +19,8 @@ const UserProfile = () => {
       .then(() => {
         console.log("profile updated");
         form.reset();
+        navigate("/profile")
+
       })
       .catch(error => console.log(error))
 

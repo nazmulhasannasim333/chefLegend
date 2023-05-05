@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { FaAlignRight, FaRegMoon, FaSun, FaTimes } from "react-icons/fa";
+import { FaAlignRight, FaMoon, FaSun, FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
@@ -39,7 +39,7 @@ const handleLogout = () => {
       <nav className=" px-20 flex justify-between items-center">
         <div className="py-5 text-green-500 font-extrabold text-4xl">
           <Link to="/">
-            <span className="text-black">Chef</span>Legend
+            <span className="text-orange-600">Chef</span>Legend
           </Link>
         </div>
         <div>
@@ -109,7 +109,7 @@ const handleLogout = () => {
             </li>
             <li>
               {
-                isDarkMode ? <button onClick={toggleDarkMode}><FaSun className=" w-6 text-white h-6 mt-3" /></button> : <button onClick={toggleDarkMode}><FaRegMoon className=" w-6 text-black h-6 mt-3"  /></button>
+                isDarkMode ? <button onClick={toggleDarkMode}><FaSun className=" w-6 text-white h-6 mt-3" /></button> : <button onClick={toggleDarkMode}><FaMoon className=" w-6 text-black h-6 mt-3"  /></button>
               }
             
             
@@ -199,7 +199,7 @@ const handleLogout = () => {
               </li>
               <li>
               {
-                isDarkMode ? <button onClick={toggleDarkMode}><FaSun className=" w-6 text-white h-6 mt-3" /></button> : <button onClick={toggleDarkMode}><FaRegMoon className=" w-6 text-black h-6 mt-3"  /></button>
+                isDarkMode ? <button onClick={toggleDarkMode}><FaSun className=" w-6 text-white h-6 mt-3" /></button> : <button onClick={toggleDarkMode}><FaMoon className=" w-6 text-black h-6 mt-3"  /></button>
               }
             
             </li>
