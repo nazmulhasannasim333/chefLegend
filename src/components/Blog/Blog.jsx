@@ -2,9 +2,11 @@
 
 import React from "react";
 import Pdf from "react-to-pdf";
+import useTitle from "../../hooks/useTitle";
 
 const Blog = () => {
   const ref = React.createRef();
+  useTitle("Blog")
   return (
       <div className="max-w-7xl mx-auto z-0">
         <div className=" my-24 md:mx-32 mx-6">

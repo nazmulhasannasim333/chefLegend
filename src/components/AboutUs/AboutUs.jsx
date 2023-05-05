@@ -1,7 +1,9 @@
 import { Map, Marker } from "pigeon-maps";
 import React from 'react';
+import useTitle from "../../hooks/useTitle";
 
 const AboutUs = () => {
+  useTitle("About Us")
   return (
     <section className=" py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

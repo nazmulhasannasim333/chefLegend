@@ -2,6 +2,7 @@
 import React, { useContext, useState } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 import { AuthContext } from "../../providers/AuthProvider";
 import './Login.css';
 
@@ -14,6 +15,7 @@ const Login = () => {
   const [showError, setShowError] = useState("");
   const navigate = useNavigate();
   let location = useLocation();
+  useTitle("Login")
 
   let from = location.state?.from?.pathname || "/";
 
