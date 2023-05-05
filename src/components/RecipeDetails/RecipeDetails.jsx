@@ -33,10 +33,7 @@ const RecipeDetails = () => {
             </LazyLoad>
           </div>
           <div className=" px-8 bg-white lg:px-20  lg:w-1/2">
-            <p className=" text-gray-900 pt-4 text-xl py-2">
-              Name: <span className="font-semibold text-2xl">{chefName}</span>
-            </p>
-            <p className=" text-gray-900 pt-2">
+               <p className="font-semibold text-3xl text-black">{chefName}</p>            <p className=" text-gray-900 pt-4">
               About: <br />
               <span className=" text-gray-500 text-xl">{Description}</span>
             </p>

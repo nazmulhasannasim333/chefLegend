@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { FaAlignRight, FaMoon, FaSun, FaTimes } from "react-icons/fa";
+import { FaBars, FaMoon, FaSun, FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
@@ -125,9 +125,9 @@ const handleLogout = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {!isMenuOpen ? (
-              <FaAlignRight className="h-6 w-6 text-black" />
+              <FaBars className="h-6 w-6 text-orange-600" />
             ) : (
-              <FaTimes className="h-6 w-6 text-black" />
+              <FaTimes className="h-6 w-6 text-orange-600" />
             )}
           </button>
         </div>
@@ -192,14 +192,14 @@ const handleLogout = () => {
                     <Link onClick={handleLogout} to="/login">Logout</Link>
                   </li>
                 </ul>
-              </div> : <Link to="/login"><button className="bg-green-500 px-5 py-2 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+              </div> : <Link to="/login"><button className="bg-green-500 px-5 py-2 my-5 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
                Login
               </button></Link> }
             </li>
               </li>
               <li>
               {
-                isDarkMode ? <button onClick={toggleDarkMode}><FaSun className=" w-6 text-white h-6 mt-3" /></button> : <button onClick={toggleDarkMode}><FaMoon className=" w-6 text-black h-6 mt-3"  /></button>
+                isDarkMode ? <button onClick={toggleDarkMode}><FaSun className=" w-6 text-white h-6 mt-2" /></button> : <button onClick={toggleDarkMode}><FaMoon className=" w-6 text-black h-6 mt-2"  /></button>
               }
             
             </li>

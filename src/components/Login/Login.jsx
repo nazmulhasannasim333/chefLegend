@@ -119,7 +119,7 @@ const Login = () => {
         <p className="text-center text-red-500 pt-5">{showError && showError}</p>
         <p className="text-center pt-5 text-black">Don't have an account? <Link className="text-green-500" to="/register">Register</Link></p>
         <div className="text-center my-4">
-        <span className="content-style">Or</span>
+        <span className="content-style text-black">Or</span>
       </div>
         <button onClick={handleGoogleLogin} className="btn btn-outline  w-full mt-5"><FaGoogle className="text-green-500 text-4xl pe-3"/> <span className="text-black">Login with Google</span></button>
         <button onClick={handleGithubLogin} className="btn btn-outline  w-full mt-5"><FaGithub className="text-black text-4xl pe-3"/> <span className="text-black">Login with Github</span></button>

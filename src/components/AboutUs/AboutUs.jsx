@@ -5,8 +5,8 @@ const AboutUs = () => {
   return (
     <section className=" py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className='grid gap-8 mb-8 lg:grid-cols-2 sm:grid-cols-1'>
-          <div className="mt-20">
+        <div className='grid gap-8 mb-8 lg:grid-cols-12 sm:grid-cols-1'>
+          <div className="mt-20 lg:col-span-7 sm:col-span-1">
           <div className="lg:text-center">
           <h2 className="text-base text-green-500 font-semibold tracking-wide uppercase">About Us</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight  sm:text-4xl">
@@ -34,7 +34,7 @@ const AboutUs = () => {
           </div>
         </div>
           </div>
-          <div className="my-5 mt-10 px-4 ">
+          <div className="my-5 mt-10 px-2 lg:col-span-5 sm:col-span-1">
       <Map height={650} defaultCenter={[50.879, 4.6997]} defaultZoom={11}>
         <Marker width={50} anchor={[50.879, 4.6997]} />
       </Map>

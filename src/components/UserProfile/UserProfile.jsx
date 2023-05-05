@@ -76,7 +76,7 @@ const UserProfile = () => {
           <input type="checkbox" id="my-modal-3" className="modal-toggle" />
           <div className="modal">
             <div className="modal-box bg-white">
-              <h3 className="font-bold text-lg bg black">
+              <h3 className="font-bold text-lg text-black">
                 Edit Your Profile
               </h3>
               <form onSubmit={handleProfileEdit} className="mt-8 space-y-6">
