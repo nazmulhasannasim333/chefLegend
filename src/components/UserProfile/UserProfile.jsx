@@ -1,10 +1,26 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useContext } from "react";
+import { FaUserEdit } from "react-icons/fa";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const UserProfile = () => {
-  const { user} = useContext(AuthContext);
-  
+  const { user, profileUpdate } = useContext(AuthContext);
+
+  const handleProfileEdit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const photo = form.photo.value;
+    console.log(name, photo);
+
+    profileUpdate(name, photo)
+      .then(() => {
+        console.log("profile updated");
+        form.reset();
+      })
+      .catch(error => console.log(error))
+
+  }
 
   return (
     <div className="max-w-xl lg:mx-auto mx-4 my-20 ">
@@ -46,6 +62,59 @@ const UserProfile = () => {
             <div>
               <p className="text-gray-600 text-sm">Location:</p>
               <p className="text-gray-800">Pabna Shadar, Pabna, BD</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label htmlFor="my-modal-3" className="btn bg-green-500 my-4 ms-4 py-2 text-white border-none">
+           <FaUserEdit className="h-6 w-6 me-2" /> Edit Profile
+          </label>
+          <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+          <div className="modal">
+            <div className="modal-box bg-white">
+              <h3 className="font-bold text-lg">
+                Edit Your Profile
+              </h3>
+              <form onSubmit={handleProfileEdit} className="mt-8 space-y-6">
+          <input type="hidden" name="remember" defaultValue="true" />
+          <div className="rounded-md shadow-sm -space-y-px">
+            <div className="pt-5">
+              <label className="text-black"  htmlFor="email-address" >
+                Your Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autoComplete="name"
+                required
+                className="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-400 text-black bg-white  rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm "
+                placeholder="Enter your name"
+              />
+            </div>
+            <div className="pt-5">
+              <label className="text-black"  htmlFor="email-address" >
+                Photo URL
+              </label>
+              <input
+                id="photo"
+                name="photo"
+                type="text"
+                autoComplete="photo"
+                required
+                className="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-400 text-black bg-white  rounded-t-md focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm "
+                placeholder="Enter your photo URL"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            className="group relative flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+          >
+           Svae Change
+          </button>
+        </form>
+        <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
             </div>
           </div>
         </div>

@@ -7,7 +7,6 @@ const Register = () => {
   const [showError, setShowError] = useState("")
   const navigate = useNavigate()
 
-
   const handleRegister = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -39,10 +38,7 @@ const Register = () => {
       setShowError(error.message)
     })
 
-    
   }
-
-
 
     return (
         <div className="max-w-xl lg:mx-auto mx-4 my-32">
